@@ -11,7 +11,7 @@ $(function(){
 
 
 $(function(){
-    var input = document.querySelectorAll("#result");
+    var input = document.querySelectorAll(".result");
     document.querySelectorAll("#plus").forEach((elem,index)=>{
         elem.onclick=e=>{
             input[index].value = Number(input[index].value) + 1;
