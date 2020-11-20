@@ -1,537 +1,973 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Brends</title>
 </head>
 <body>
-  
-  <div class="header">
-    <div class="container">
 
-        <div class="header__head">
-
-            <div class="head__item">
-               <div class="lago__head">
-                    <div class="head__logo"><img src="assets/img/logo.png" alt=""></div>
-                    <div class="head__subtitle">стандарт чистоты</div>
+    
+      <div class="header">
+        <div class="container">
+    
+            <div class="header__head">
+    
+                <div class="head__item">
+                   <div class="lago__head">
+                        <div class="head__logo"><img src="assets/img/logo.png" alt=""></div>
+                        <div class="head__subtitle">стандарт чистоты</div>
+                    </div>
+                    <div class="header__search">
+                        <input type="text" class="head__search" placeholder="Поиск">
+                        <button class="search__ico" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="header__search">
-                    <input type="text" class="head__search" placeholder="Поиск">
-                    <button class="search__ico" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-            </div>
-
-            <div class="head__item">
-               <div class="header__num">
-                    <div class="head__num">
-                        <div class="head__title">Бухгалтерия</div>
-                        <div class="mail__ico"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="head__mail">info@pro-milo.ru</a></div>
+    
+                <div class="head__item">
+                   <div class="header__num">
+                        <div class="head__num">
+                            <div class="head__title">Бухгалтерия</div>
+                            <div class="mail__ico"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="head__mail">info@pro-milo.ru</a></div>
+                            <div class="phone__ico"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="head__num1">8 (918) 465-06-55</a></div>
+                        </div>
+                        <div class="head__num">
+                        <div class="head__title">Отдел продаж</div>
+                        <div class="mail__ico"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="head__mail">zakaz@pro-milo.ru</a></div>
                         <div class="phone__ico"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="head__num1">8 (918) 465-06-55</a></div>
                     </div>
-                    <div class="head__num">
-                    <div class="head__title">Отдел продаж</div>
-                    <div class="mail__ico"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="head__mail">zakaz@pro-milo.ru</a></div>
-                    <div class="phone__ico"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="head__num1">8 (918) 465-06-55</a></div>
+                   </div>
+                    <div class="click__phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <a href="#" class="head__list"><i class="fa fa-building" aria-hidden="true"></i><span>7</span></a>
                 </div>
-               </div>
-                <div class="click__phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <a href="#" class="head__list"><i class="fa fa-building" aria-hidden="true"></i><span>7</span></a>
             </div>
+    
+            <div class="header__search--mini">
+                        <input type="text" class="head__search" placeholder="Поиск">
+                        <button class="search__ico" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+    
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__link"><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i>Продукция</a></li>
+                    <li class="nav__link"><a href=""><i class="fa fa-fire" aria-hidden="true"></i>Бренды</a></li>
+                    <li class="nav__link"><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>О компании</a></li>
+                    <li class="nav__link"><a href=""><i class="fa fa-users" aria-hidden="true"></i>Клиентам</a></li>
+                    <li class="nav__link"><a href=""><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Дистрибьюторам</a></li>
+                    <li class="nav__link"><a href=""><i class="fa fa-comment" aria-hidden="true"></i>Контакты</a></li>
+                </ul>
+            </nav>
+    
+    
+            <div class="list__nav">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Продукция</a></li>
+                    <li><a href="">Антисептики</a></li>
+                </ul>
+            </div>
+    
         </div>
-
-        <div class="header__search--mini">
-                    <input type="text" class="head__search" placeholder="Поиск">
-                    <button class="search__ico" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
-
-        <nav class="header__nav">
-            <ul class="nav">
-                <li class="nav__link"><a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i>Продукция</a></li>
-                <li class="nav__link"><a href=""><i class="fa fa-fire" aria-hidden="true"></i>Бренды</a></li>
-                <li class="nav__link"><a href=""><i class="fa fa-desktop" aria-hidden="true"></i>О компании</a></li>
-                <li class="nav__link"><a href=""><i class="fa fa-users" aria-hidden="true"></i>Клиентам</a></li>
-                <li class="nav__link"><a href=""><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Дистрибьюторам</a></li>
-                <li class="nav__link"><a href=""><i class="fa fa-comment" aria-hidden="true"></i>Контакты</a></li>
-            </ul>
-        </nav>
-
-
-        <div class="list__nav">
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Продукция</a></li>
-                <li><a href="">Антисептики</a></li>
-            </ul>
-        </div>
-
     </div>
-</div>
-  
-  
-  <div class="product">
-    <div class="container">
-
-        <div class="product__inner">
-
-            <div class="product__sidebar">
-                <div class="sidebar__nav">
-
-
-                    <div class="sidebar__item">
-                        <div class="sidebar__ico"><i class="fa fa-paperclip" aria-hidden="true"></i></div>
-                        <div class="sidebar__info">
-                            <div class="info__title">Скачать прайс</div>
-                            <div class="info__subtitle">Получите полный и актуальный PDF прайс на антисептики</div>
+    
+    
+      <div class="product">
+        <div class="container">
+    
+            <div class="product__inner">
+    
+                <div class="product__sidebar">
+                    <div class="sidebar__nav">
+    
+    
+                        <div class="sidebar__item">
+                            <div class="sidebar__ico"><i class="fa fa-paperclip" aria-hidden="true"></i></div>
+                            <div class="sidebar__info">
+                                <div class="info__title">Скачать прайс</div>
+                                <div class="info__subtitle">Получите полный и актуальный PDF прайс на антисептики</div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="sidebar__item">
-                        <div class="sidebar__ico"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                        <div class="sidebar__info">
-                            <div class="info__title">Сертификаты</div>
-                            <div class="info__subtitle">на антисептики</div>
+    
+                        <div class="sidebar__item">
+                            <div class="sidebar__ico"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                            <div class="sidebar__info">
+                                <div class="info__title">Сертификаты</div>
+                                <div class="info__subtitle">на антисептики</div>
+                            </div>
                         </div>
+    
+                        <div class="sidebar__item">
+                            <div class="info__title">Наши контакты</div>
+    
+                             <div class="info__flex"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="info__contact">8 (918) 477-99-66</a></div>
+                             <div class="info__flex"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="info__contact">zakaz@pro-milo.ru</a></div>
+                             <div class="info__flex"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#" class="info__contact">Краснодарский край, 353430, станица Анапская, ул. Анапская, д. 121</a></div>
+                        </div>
+    
                     </div>
-
-                    <div class="sidebar__item">
-                        <div class="info__title">Наши контакты</div>
-
-                         <div class="info__flex"><i class="fa fa-phone" aria-hidden="true"></i><a href="#" class="info__contact">8 (918) 477-99-66</a></div>
-                         <div class="info__flex"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#" class="info__contact">zakaz@pro-milo.ru</a></div>
-                         <div class="info__flex"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#" class="info__contact">Краснодарский край, 353430, станица Анапская, ул. Анапская, д. 121</a></div>
-                    </div>
-
                 </div>
-            </div>
-
-            <div class="product__content">
-
-                <div class="product__title">Антисептики</div>
-                <div class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-
-                <div class="sort">
-                    <select>
-                        <option value="">Сортировать по популярности</option>
-                        <option value="">Сортировать по цене</option>
-                    </select>
-                </div>
-
-
-                <div class="trade">
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(6).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
-                        <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
-                            </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
+    
+                <div class="product__content">
+    
+                    <div class="product__title">Антисептики</div>
+                    <div class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    
+    
+                    <div class="sort">
+                        <select>
+                            <option value="">Сортировать по популярности</option>
+                            <option value="">Сортировать по цене</option>
+                        </select>
                     </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(7).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-                        <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
-                            </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-
-                        <div class="new__span--orange">Распродажа!</div>
-
-                    </div>
-
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(16).png" alt=""></div>
-
-                        <div class="trade__title">Название товара</div>
-                        <div class="trade__subtitle">Краткое описание</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+    
+    
+                    <div class="trade">
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(6).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
                             </div>
-                            <div class="trade__buy">Заказ</div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
                         </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(17).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
-                        <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
-                            </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(10).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-                        <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(7).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+                            <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
                             </div>
-                            <div class="trade__buy">Заказ</div>
+    </div>
+    
+                            <div class="new__span--orange">Распродажа!</div>
+    
                         </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(11).png" alt=""></div>
-
-                        <div class="trade__title">Название товара</div>
-                        <div class="trade__subtitle">Краткое описание</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
-                            </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(15).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
-                        <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
-
-                        <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+    
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(16).png" alt=""></div>
+    
+                            <div class="trade__title">Название товара</div>
+                            <div class="trade__subtitle">Краткое описание</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
                             </div>
-                            <div class="trade__buy">Заказ</div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
                         </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(13).png" alt=""></div>
-
-                        <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-                        <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
-
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(17).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
+                            </div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(10).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+                            <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
+                            </div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(11).png" alt=""></div>
+    
+                            <div class="trade__title">Название товара</div>
+                            <div class="trade__subtitle">Краткое описание</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
+                            </div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(15).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    
+                            <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
+                            </div>
+    </div>
+    
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(13).png" alt=""></div>
+    
+                            <div class="trade__title">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+                            <div class="trade__subtitle">Антибактериальное увлажняющее крем-мыло Dr.Elert</div>
+    
+        <div class="">
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
+                            </div>
+    </div>
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="trade__item">
+    
+                            <div class="trade__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade__title">Название товара</div>
+                            <div class="trade__subtitle">Краткое описание</div>
     <div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
-                            </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                    <div class="trade__item">
-
-                        <div class="trade__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
-
-                        <div class="trade__title">Название товара</div>
-                        <div class="trade__subtitle">Краткое описание</div>
-<div class="">
-                        <div class="cheap">
-                            <div class="cheap__title">Оптовая цена</div>
-                            <div class="cheap__chars">
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 0 до 100 шт</div>
-                                    <div class="cheap__summ">9 000 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 100 до 1 000 шт</div>
-                                    <div class="cheap__summ">8 700 <span>руб./шт</span></div>
-                                </div>
-                                <div class="cheap__item">
-                                    <div class="cheap__col">от 1 000 до 10 000 шт</div>
-                                    <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                            <div class="cheap">
+                                <div class="cheap__title">Оптовая цена</div>
+                                <div class="cheap__chars">
+                                    <div class="cheap__item">
+                                        <div class="cheap__col"><span>от 0</span> до 100 шт</div>
+                                        <div class="cheap__summ">9 000 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 100<span> до 1 000 шт</span></div>
+                                        <div class="cheap__summ">8 700 <span>руб./шт</span></div>
+                                    </div>
+                                    <div class="cheap__item">
+                                        <div class="cheap__col">от 1 000 <span>до 10 000 шт</span></div>
+                                        <div class="cheap__summ">8 650 <span>руб./шт</span></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="trade__btn">
-                            <div class="trade__col"><input value="1" class="result"></div>
-                            <div class="trade__chose">
-                                <button class="plus" id="plus">+</button>
-                                <button class="plus" id="minus">-</button>
+    
+                            <div class="trade__btn">
+                                <div class="trade__col"><input value="1" class="result"></div>
+                                <div class="trade__chose">
+                                    <button class="plus" id="plus">+</button>
+                                    <button class="minus" id="minus">-</button>
+                                </div>
+                                <div class="trade__buy">Заказ</div>
                             </div>
-                            <div class="trade__buy">Заказ</div>
-                        </div>
-</div>
-
-                        <div class="new__span">Новинка</div>
-
-                    </div>
-
-
-
-
-                </div>
-
-
-
-
-            </div>
-
-
-        </div>
-
-
     </div>
-</div>
-<script src="assets/js/app.min.js"></script>
-  
-  
+    
+                            <div class="new__span">Новинка</div>
+    
+                        </div>
+    
+    
+    
+    
+                    </div>
+    
+    
+    
+    
+    
+    
+                <div class="offers">
+                    <div class="offers__item"><img src="assets/img/offer-image.png" alt=""></div>
+                    <div class="offers__item">
+                        <div class="offers__title">Стать дистрибьютором РОСТ!</div>
+                        <div class="offers__subtitle">Вы можете стать представителем компании РОСТ в регионах.</div>
+                        <div class="offers__btn"><button type="button">Стать дистрибьютором</button></div>
+                    </div>
+                </div>
+    
+    
+    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="trade-slider swiper-container">
+    
+       <div class="trade-slider__title">Рекомендуемые товары</div>
+    
+        <div class="trade-slider__wrapper swiper-wrapper">
+    
+    
+    
+    
+            <div class="trade-slider__slide swiper-slide">
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+            </div>
+    
+            <div class="trade-slider__slide swiper-slide">
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+            </div>
+    
+            <div class="trade-slider__slide swiper-slide">
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+            </div>
+    
+    
+            <div class="trade-slider__slide swiper-slide">
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+                <div class="trade-slider__item">
+    
+                            <div class="trade-slider__ico"><img src="assets/img/Rectangle%20(14).png" alt=""></div>
+    
+                            <div class="trade-slider__maintitle">Антибактериальное жидкое мыло с триклозаном</div>
+                            <div class="trade-slider__subtitle">Антибактериальное жидкое мыло с триклозаном</div>
+    <div class="">
+    
+    
+                            <div class="trade-slider__btn">
+                                <div class="trade-slider__col">290<span>.75 руб</span></div>
+                                <div class="trade-slider__buy">Заказ</div>
+                            </div>
+    </div>
+    
+    
+                        </div>
+    
+    
+            </div>
+    
+        </div>
+    
+        <div class="trade-slide__pagination swiper-pagination"></div>
+    </div>
+    
+    
+    
+    <footer class="footer">
+        <div class="container">
+    
+            <div class="footer__inner">
+    
+                <div class="footer__item">
+    
+                    <div class="footer__logo"><img src="assets/img/foot__logo.png" alt=""></div>
+    
+                    <div class="adress">
+                        <div class="adress__title">Адрес:</div>
+                        <div class="adress__contacts">353430, Краснодарский край, станица Анапская, ул. Анапская, д. 121</div>
+                    </div>
+    
+                    <div class="adress">
+                        <div class="adress__title">Email:</div>
+                        <div class="adress__contacts">     <b>Бухгалтерия</b><br/><span>info@ -milo.ru</span><br/>
+                            <b>Отдел продаж</b><br/><span>zakaz@pro-milo.ru</span>
+    
+                        </div>
+                    </div>
+    
+                    <div class="adress">
+                        <div class="adress__title">Телефоны:</div>
+                        <div class="adress__contacts"><span>8 (918) 477-99-66 </span><br/><span>8 (918) 465-06-55</span></div>
+                    </div>
+    
+                </div>
+                <div class="footer__item">
+                   <div class="footer__title">КАТЕГОРИИ</div>
+                    <ul>
+                        <li><a href="">Антисептики</a></li>
+                        <li><a href="">Для стирки белья</a></li>
+                        <li><a href="">Для кухни</a></li>
+                        <li><a href="">Для пола</a></li>
+                        <li><a href="">Для сантехники и прочистки труб</a></li>
+                        <li><a href="">Для уборки</a></li>
+                        <li><a href="">Для мытья посуды</a></li>
+                        <li><a href="">Технические автомобильные жидкости</a></li>
+                        <li><a href="">Универсальные моющие средства</a></li>
+                        <li><a href="">Акриловая грунтовка</a></li>
+                        <li><a href="">Жидкое мыло</a></li>
+                        <li><a href="">Моющие средства</a></li>
+                        <li><a href="">Одноразовый шампунь</a></li>
+                        <li><a href="">Твердое мыло</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+    
+                    <div class="footer__title">КАТЕГОРИИ</div>
+    
+                    <ul>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Сертификаты</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                    </ul>
+    
+    
+                </div>
+                <div class="footer__item">
+    
+                    <div class="footer__title">О НАС</div>
+    
+                        <ul>
+    
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Вакансии</a></li>
+    
+                        </ul>
+    
+                </div>
+    
+    
+    
+            </div>
+    
+    
+        </div>
+    </footer>
+    
+    
+
+
+    <script src="assets/js/app.min.js"></script>
+
 </body>
 </html>
